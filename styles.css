@@ -497,6 +497,35 @@ h2 {
     color: #444;
 }
 
+/* Price tables */
+.price-table {
+    width: 100%;
+    max-width: 900px;
+    margin: 1rem auto 2rem auto;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: var(--card-shadow);
+}
+.price-table thead {
+    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+    color: #fff;
+}
+.price-table th, .price-table td {
+    padding: 0.9rem 1rem;
+    text-align: left;
+    border-bottom: 1px solid rgba(0,0,0,0.06);
+    font-weight: 500;
+}
+.price-table tbody tr:nth-child(even) td {
+    background: var(--background-light);
+}
+.price-table td {
+    font-weight: 400;
+    color: var(--text-secondary);
+}
+
 /* Responsive tweaks */
 @media (max-width: 768px) {
     .hero {
